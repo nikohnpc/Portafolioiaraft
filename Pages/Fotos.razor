@@ -1,0 +1,49 @@
+﻿@page "/fotos"
+<PageTitle>Galería Profesional</PageTitle>
+
+<h1 class="titulo">Galería de Fotografías</h1>
+
+<div class="gallery-vertical">
+    @foreach (var foto in ListaFotos)
+    {
+        <img class="foto-vertical" src="@foto" @onclick="() => AbrirLightbox(foto)" />
+    }
+</div>
+
+@if (LightboxVisible)
+{
+    <div class="lightbox-overlay" @onclick="CerrarLightbox">
+        <img class="lightbox-img" src="@FotoSeleccionada" />
+    </div>
+}
+
+@inject HttpClient Http
+
+@code {
+    List<string> ListaFotos = new();
+    bool LightboxVisible = false;
+    string FotoSeleccionada = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Leer lista.json
+        var fotos = await Http.GetFromJsonAsync<string[]>("img/lista.json");
+
+        foreach (var foto in fotos!)
+        {
+            ListaFotos.Add($"img/{foto}");
+        }
+    }
+
+    void AbrirLightbox(string foto)
+    {
+        FotoSeleccionada = foto;
+        LightboxVisible = true;
+    }
+
+    void CerrarLightbox()
+    {
+        LightboxVisible = false;
+    }
+}
+
