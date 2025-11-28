@@ -1,0 +1,4 @@
+C:\Users\roman\Documents\Portafolioiara\MiPortfolio\bin\Release\net10.0\publish\wwwroot\index.html
+C:\Users\roman\Documents\Portafolioiara\MiPortfolio\bin\Release\net10.0\publish\MiPortfolio.runtimeconfig.json
+C:\Users\roman\Documents\Portafolioiara\MiPortfolio\bin\Release\net10.0\publish\dotnet.js
+C:\Users\roman\Documents\Portafolioiara\MiPortfolio\bin\Release\net10.0\publish\web.config

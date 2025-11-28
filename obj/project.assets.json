@@ -2141,11 +2141,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\roman\\Documents\\Portafolioiara\\Miportfolio\\MiPortfolio.csproj",
+      "projectUniqueName": "C:\\Users\\roman\\Documents\\Portafolioiara\\MiPortfolio\\MiPortfolio.csproj",
       "projectName": "MiPortfolio",
-      "projectPath": "C:\\Users\\roman\\Documents\\Portafolioiara\\Miportfolio\\MiPortfolio.csproj",
+      "projectPath": "C:\\Users\\roman\\Documents\\Portafolioiara\\MiPortfolio\\MiPortfolio.csproj",
       "packagesPath": "C:\\Users\\roman\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\roman\\Documents\\Portafolioiara\\Miportfolio\\obj\\",
+      "outputPath": "C:\\Users\\roman\\Documents\\Portafolioiara\\MiPortfolio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\roman\\AppData\\Roaming\\NuGet\\NuGet.Config"
